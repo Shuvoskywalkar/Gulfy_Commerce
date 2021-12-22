@@ -120,7 +120,7 @@ export default function Home() {
         horizontal: 'right',
       }}
       open={isMobileMenuOpen}
-      onClose={handleMobileMenuClose}
+      onClose={()=>handleMobileMenuClose()}
     >
       <MenuItem>
         <IconButton size="large" aria-label="show 4 new mails" color="inherit">
@@ -142,7 +142,8 @@ export default function Home() {
         </IconButton>
         <p>Notifications</p>
       </MenuItem>
-      <MenuItem onClick={handleProfileMenuOpen}>
+      <br/>
+      <MenuItem >
         <IconButton
           size="large"
           aria-label="account of current user"
@@ -154,6 +155,20 @@ export default function Home() {
         </IconButton>
         <p>Profile</p>
       </MenuItem>
+      <br/>
+      <MenuItem>
+        <IconButton
+          size="large"
+          aria-label="show 17 new notifications"
+          color="inherit"
+        >
+          <Badge badgeContent={17} color="error">
+            <NotificationsIcon />
+          </Badge>
+        </IconButton>
+        <p>Notifications</p>
+      </MenuItem>
+      
     </Menu>
   );
   const darken = grey[900]; // #f44336
@@ -163,6 +178,8 @@ export default function Home() {
       <AppBar position="fixed"  style={{backgroundColor:"#212121"}} >
         <Toolbar>
           <IconButton
+          
+          onClick={()=>handleProfileMenuOpen()}
             size="large"
             edge="start"
             color="inherit"
