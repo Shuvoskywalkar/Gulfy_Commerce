@@ -1,3 +1,10 @@
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
 html,
 body {
   padding: 0;
@@ -13,4 +20,81 @@ a {
 
 * {
   box-sizing: border-box;
+  overflow-x: hidden;
+}
+.Card{
+  box-shadow:white 40px 40px 80px 80px
+}
+#demo {
+  text-align: center;
+  font-size: 100px;
+  font-weight: 800;
+  margin-top: 0px;
+  /* color: whitesmoke; */
+  --tw-text-opacity: 1;
+  color: rgba(249, 250, 251, var(--tw-text-opacity));
+
+}
+
+
+.timerText {
+  /* text-align: center; */
+  font-size: 26px;
+  margin-top: 0px;
+}
+.h1{
+  font-size: 60px;
+  /* line-height: 1.5; */
+  font-family: "Sacramento", Arial, serif;
+
+}
+
+.ard:hover{box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.1);;
+  border-radius: 10px;}
+
+  .transUP{
+    position: absolute;
+  
+  }
+  .transUP a{
+    bottom: -60px;
+    left: -50%;
+    transform: translateY(-50%);
+    transition: all .4s ease;
+  }
+
+  .rating{
+    font-size: .7rem;
+    color: #b81c1c;
+    user-select: none;
+}
+.ard{
+  position: relative;
+}
+.CartBtn{
+  /* position: absolute; */
+  bottom:2px;
+  width: 100%;
+  text-align: center;
+}
+.photoIcons{
+  /* padding: 5px;
+  background-color: black;
+  color: #b81c1c;
+  clip-path: circle(); */
+  /* height: 50px;
+  width: 50px; */
+  position :absolute;
+  bottom:67%;
+  left:25%;
+  align-self: center;
+  justify-self: center;
+  display:none;
+  font-size: 30px;
+  /* padding:20px; */
+}
+.ard:hover  .photoIcons{
+  display: block;
+ /* transform: translateY(-30px);  */
+ transition:5s;
 }
