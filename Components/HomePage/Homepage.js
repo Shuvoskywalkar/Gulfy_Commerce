@@ -13,7 +13,7 @@ const Homepage = (props) => {
 const [time,settime]=useState([])
 
 
-  var countDownDate = new Date("dec 31, 2021 15:37:25").getTime();
+  var countDownDate = new Date("Feb 6, 2022 15:37:25").getTime();
   // Update the count down every 1 second
   var x = setInterval(function() {
   
@@ -40,11 +40,60 @@ const [time,settime]=useState([])
     }
   }, 1000);
   // console.log(time)
+
+
+//   document.onreadystatechange(function () {
+
+//     var $window = $(window);
+
+//     function checkWindowWidth() {
+      
+//         var windowsize = $window.width();
+
+//         if (windowsize > 1000) {
+
+//             $('#navbar').css('display','block');
+
+//         } else {
+
+//             $('#navbar').css('display','none');
+
+//         }
+//     }
+
+//     checkWindowWidth();
+
+//     $(window).resize(checkWindowWidth);
+
+// });
+
+
+  // $('#navbar-btn').click(function() {
+  //   $('#navbar').toggle();
+  // });
+
+  // function checkWindowWidth() {
+  //   var windowsize = $window.width();
+
+  //   if (windowsize > 1000) {
+  //     $("#navbar").css("display", "block");
+  //   } else {
+  //     $("#navbar").css("display", "none");
+  //   }
+  // }
+
+  // checkWindowWidth();
+
     return (
-        <Fragment>
+        <div>
 
-<Home/>
+{/* <Home/> */}
 
+
+
+
+
+<Carousel/>
 <Sliders/>
 
 
@@ -311,7 +360,7 @@ time.day + "d " + time.hour + "h "
 
 
 
-        </Fragment>
+        </div>
 
     );
 };

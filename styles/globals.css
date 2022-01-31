@@ -20,7 +20,7 @@ a {
 
 * {
   box-sizing: border-box;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 .Card{
   box-shadow:white 40px 40px 80px 80px
