@@ -87,13 +87,13 @@ const [time,settime]=useState([])
     return (
         <div>
 
-{/* <Home/> */}
+<Home/>
 
 
 
 
 
-<Carousel/>
+{/* <Carousel/> */}
 <Sliders/>
 
 

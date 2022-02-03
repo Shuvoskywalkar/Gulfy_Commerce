@@ -9,7 +9,7 @@ const Details = (props) => {
     const{ProductDetail}=props;
     return (
 <Fragment>
-    {console.log(ProductDetail)}
+    {/* {console.log(ProductDetail)} */}
      <Head>
         <title>{ProductDetail.title}</title>
         <meta 
